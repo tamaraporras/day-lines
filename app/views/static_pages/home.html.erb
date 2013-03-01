@@ -1,0 +1,18 @@
+<% if user_signed_in? %>
+<h1>You're here!  Hooray!  It's you!</h1>
+
+<% else%>
+<div class="center hero-unit">
+    <h1>day-lines</h1>
+
+    <h2>
+      one line a day that sticks with you. <br>
+brought to you by
+      <a href="http://whiskeycokewithyou.com/">having a whiskey coke with you</a>.
+    </h2>
+
+    <%= link_to "sign up", new_user_registration_path, 
+                                class: "btn btn-large btn-primary" %>
+</div>
+
+<%end %>
